@@ -1,3 +1,48 @@
+# Opensource - ethereum - pool for TEO migration guide.
+
+## 1. How to change import path to patched tethashv1
+
+
+### Download and install gomove binary from https://github.com/KSubedi/gomove
+
+```
+# you also download gomove binary packages release pages
+# https://github.com/KSubedi/gomove/releases
+
+wget https://github.com/KSubedi/gomove/releases/download/0.2.17/gomove_0.2.17_amd64.deb
+sudo dpkg -i ./gomove_0.2.17_amd64.deb
+
+```
+
+### Change go import paths with gomove
+
+```
+# change import path to followings
+
+gomove -d ./  github.com/ethereum/ethash github.com/tao-foundation/tethashv1
+gomove -d ./  github.com/ethereum/go-ethereum/ github.com/tao-foundation/tethashv1-geth/
+
+```
+
+## 2. How to upgrade open-ethereum-pool to support parity V2 getWork
+
+in open-ethereum-pool develop branch there's parity V2 getWork supports.
+
+please refer related issues in sammy's open-ethereum-pool repository
+https://github.com/sammy007/open-ethereum-pool/issues/362
+
+patched commit is  https://github.com/sammy007/open-ethereum-pool/commit/34040466e2c392dc8dc6104e571875cbcfbec0c8
+
+so you can cherry pick or manual patch to your custom open-ethereum-pool src.
+
+```
+git cherry-pick 34040466e2c392dc8dc6104e571875cbcfbec0c8
+```
+
+and, make all , it is enough things to your open-ethereum-pool to support tethashv1 TEO mining.
+
+
+
 ## Open Source Ethereum Mining Pool
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
