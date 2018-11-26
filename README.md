@@ -29,9 +29,12 @@ gomove -d ./  github.com/ethereum/go-ethereum/ github.com/tao-foundation/tethash
 in open-ethereum-pool develop branch there's parity V2 getWork supports.
 
 please refer related issues in sammy's open-ethereum-pool repository
+
 https://github.com/sammy007/open-ethereum-pool/issues/362
 
-patched commit is  https://github.com/sammy007/open-ethereum-pool/commit/34040466e2c392dc8dc6104e571875cbcfbec0c8
+patched commit is  
+
+https://github.com/sammy007/open-ethereum-pool/commit/34040466e2c392dc8dc6104e571875cbcfbec0c8
 
 so you can cherry pick or manual patch to your custom open-ethereum-pool src.
 
@@ -39,7 +42,13 @@ so you can cherry pick or manual patch to your custom open-ethereum-pool src.
 git cherry-pick 34040466e2c392dc8dc6104e571875cbcfbec0c8
 ```
 
-and, make all , it is enough things to your open-ethereum-pool to support tethashv1 TEO mining.
+and, `make all` , it is enough things to your open-ethereum-pool to support tethashv1 TEO mining.
+
+```
+
+open-ethpool-teo$ make all
+
+```
 
 
 
