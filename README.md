@@ -55,6 +55,12 @@ install the following teo-net-intelligence-api for stats monitoring.
 https://github.com/tao-foundation/teo-net-intelligence-api
 
 
+## 4. TEO Pool Lists (wiki)
+
+Anyone who updates your pool then PR or inform to us , issues or telegram chat.
+
+https://github.com/tao-foundation/open-ethpool-teo/wiki/TEO-(TethashV1)-mining-pool-lists
+
 <br><br>
 <hr>
 <br><br>
