@@ -50,7 +50,14 @@ open-ethpool-teo$ make all
 
 ```
 
+## 3. Register mining node status on teostat
+install the following teo-net-intelligence-api for stats monitoring.
+https://github.com/tao-foundation/teo-net-intelligence-api
 
+
+<br><br>
+<hr>
+<br><br>
 
 ## Open Source Ethereum Mining Pool
 
