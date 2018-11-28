@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-5">
         <h1 style="font-size: 24px">
-          <strong>Open Ethereum Pool</strong>
+          <strong>TEO Mining Pool</strong>
         </h1>
         <strong>Min. payout threshold: {{config.PayoutThreshold}}</strong>, Payouts run twice per day.<br/>
         <span class="label label-success">PROP</span> Stable and profitable pool with regular payouts.
@@ -30,7 +30,7 @@
   <div class="stats">
     <h4>Your Stats &amp; Payment History</h4>
     <div class="input-group">
-      {{input value=cachedLogin class="form-control" placeholder="Enter Your Ethereum Address"}}
+      {{input value=cachedLogin class="form-control" placeholder="Enter Your TEO Address"}}
       <span class="input-group-btn">
         <button class="btn btn-primary" type="button" {{action 'lookup' cachedLogin}}>
           <span style="display: inline;"><i class="fa fa-search"></i> Lookup</span>
@@ -41,7 +41,59 @@
   <div>
     <hr/>
     <h4 class="note note-info text-center">
-      ethminer.exe -F {{config.HttpHost}}:{{config.HttpPort}}/&lt;address&gt;/&lt;worker&gt; -G
+  <div> <p>
+  <strong> Pool Realtime FAQ , Join to Telegram channel</strong> <br>
+  <strong> If you join Pool, and ask direct to admin, join the channel. 풀에 대해서 문의 하시려면 다음의 Telegram 채널에 들어오세요. </strong> <br>
+  <strong> <a href="https://t.me/trustfarmblockchaintalk" rel="nofollow" target="_blank">Telegram Channel Join하기</a> </strong><br>
+
+  <br><hr/><br>
+
+	<strong>TEO Public Mainnet has started </strong> <br>
+	<strong>another 3rd party pool will be listed here </strong><br>
+	1. pool1 will be shutdown in near future and pool3 will be public and changed name to teopool transparently <br>
+        <strong>
+        2. ETH/ETC airdrop finished <a href="https://forum.tao.foundation/topic/36/eng-teo-status-and-notify-teo-will-full-public" rel="nofollow" target="_blank"> TEO Status and Full Public</a> </strong><br>
+
+	<br><hr/>
+	<br> <strong> Pool Fee will increased to 1% and more </strong> <br><br><hr/>
+
+      NVIDIA GPU : teominer.exe -U -P stratum://[Your Wallet Address].[Worker]@{{config.StratumHost}}:8008 <br><br>
+      AMD    GPU : teominer.exe -G -P stratum://[Your Wallet Address].[Worker]@{{config.StratumHost}}:8008 <br><br>
+	Please refer more advanced options in batchfile in package file <a href="https://github.com/tao-foundation/teominer/releases/download/v0.16.3/teoMiner.0.16.3.win10.cuda10.package.zip" rel="nofollow" target="_blank"> batchfile in package file </a>
+
+	</p></div>
+    </h4>
+  </div>
+  <div>
+    <hr/>
+    <h4 class="note note-info text-center">
+       Download teominer here <a href="https://github.com/tao-foundation/teominer/releases" rel="nofollow" target="_blank">https://github.com/tao-foundation/teominer/releases</a>
+
+	<br><br>
+
+	<div> <p>
+<strong> TEO Pool Mining Example </strong> <br>
+<strong> - Apply FailSafe to Pool2 - CUDA Example - </strong> <br>
+
+<br><pre align=left>
+setx GPU_FORCE_64BIT_PTR 0
+setx GPU_MAX_HEAP_SIZE 100
+setx GPU_USE_SYNC_OBJECTS 1
+setx GPU_MAX_ALLOC_PERCENT 100
+setx GPU_SINGLE_ALLOC_PERCENT 100
+
+teominer  -U -P stratum://0x5ad71f1852928d0527c69855880edc4a766b142c.pc1@teopool.tao.foundation:8008 -P stratum://0x5ad71f1852928d0527c69855880edc4a766b142c.pc1@teopool.tao.foundation:8008 -P stratum://0x5ad71f1852928d0527c69855880edc4a766b142c.pc1@teopool2.tao.foundation:8008
+</pre>
+<br> <br>
+
+	</p></div>
+
+    </h4>
+  </div>
+  <div>
+    <hr/>
+    <h4 class="note note-info text-center">
+       More Miner App will be updated.
     </h4>
   </div>
 </div>
